@@ -1,0 +1,7 @@
+<h1>Your Answer</h1>
+<%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+<p>Your question was: <%= @question %></p>
+<p>Answer: <%= @response %></p>
+<p>
+  <a href="<%= ask_path %>">Ask another question</a>
+</p>

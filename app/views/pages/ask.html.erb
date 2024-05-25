@@ -1,0 +1,9 @@
+<%= form_with url: answer_path, method: :post, local: true do %>
+  <div>
+    <label for="question">Your question:</label>
+    <%= text_field_tag :question %>
+  </div>
+  <div>
+    <%= submit_tag "Ask!" %>
+  </div>
+<% end %>
